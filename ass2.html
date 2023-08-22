@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+  
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport"content="width=device-width,initial-scale=1.0" >
+<title></title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<style>
+     body{ 
+       font-family: Arial, Helvetica, sans-serif;
+        background:rgb(219,112,147); text-align: center;}
+
+    
+</style>
+  </head>
+  
+  <body>
+    <div>
+    <h1>Contact Us</h1>
+    <form action="contact.php" method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" required></textarea><br>
+      
+      <input type="submit" value="Submit">
+      <input type="reset">
+    </form><br><br>
+</div>
+<div>
+    <h1>Login</h1>
+        <form action="contact.php" method="POST">
+
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset">
+    </form><br><br>
+</div>
+<div>
+
+    <h1>Survey</h1>
+
+<form action="/submit-survey" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br>
+  
+  <label for="age">Age:</label><br>
+  <input type="number" id="age" name="age" required><br><br>
+  
+  <label for="gender">Gender:</label><br>
+  
+  <input type="radio" id="male" name="gender" value="male" required>
+<label for="male">Male</label><br>
+ 
+  <input type="radio" id="female" name="gender" value="female">
+ <label for="female">Female</label><br><br>
+
+  <h3>Which programming languages do you know?</h3>
+
+  <input type="checkbox" id="C" name="programming" value="C">
+  <label for="programming">C</label>
+
+  <input type="checkbox" id="Python" name="programming" value="Python">
+  <label for="programming">Python</label>
+
+  <input type="checkbox" id="Java" name="programming" value="Java">
+  <label for="programming">JAVA</label><br><br>
+
+  <label for="comments">comments:</label><br>
+  <textarea id="message" name="message" required></textarea><br>
+  
+  <input type="submit" value="Submit">
+  <input type="reset">
+
+    </form>
+    </div>
+</div>
+    </body>
+    </html>
